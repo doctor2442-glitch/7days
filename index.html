@@ -529,10 +529,7 @@ function burst(){
 let typer=null;
 function playSpeech(){
  const sp=$("speech");
- if(reduce){sp.textContent=SPEECH;return}
- let i=0;sp.textContent="";
- typer=setInterval(()=>{sp.textContent=SPEECH.slice(0,++i);if(i>=SPEECH.length)clearInterval(typer)},34);
- sp.onclick=()=>{clearInterval(typer);sp.textContent=SPEECH};
+ sp.textContent=SPEECH;
 }
 
 /* ── 엔딩 크레딧: 극장 화면에서 아래에서 위로 ── */
